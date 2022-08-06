@@ -11,17 +11,15 @@ export function Card(props:CardProps){
    
     return(
     <div className="conteiner">
-        <div className="head">{props.cards.Name +'   '+ props.cards.SurName}</div>
+        <div className="head">{props.cards.Name }</div>
         <div className="mainBody">
             <div className="picture"> <img src={props.cards.image}/></div>
             <div className="description">
                 <p><span>Имя:</span> {props.cards.Name}</p>
-                <p><span>Фамилия:</span> {props.cards.SurName}</p>
+                <p><span>Порода:</span> {props.cards.poroda}</p>
                 <p><span>Возраст:</span> {props.cards.fullYearsOld}</p>
-                <p><span>Семейное положение:</span> {props.cards.family}</p>
-                <p><span>Cтрана:</span> {props.cards.country}</p>
-                <p><span>Тел.:</span> {props.cards.tell}</p>
-                <p><span>Email:</span> {props.cards.email}</p>
+                <p><span>Cтрана происхождения:</span> {props.cards.country}</p>
+                <p><span>вес:</span> {props.cards.weight}</p>
                 <p className="lsDesc">{props.cards.description}</p>
                
             </div>
